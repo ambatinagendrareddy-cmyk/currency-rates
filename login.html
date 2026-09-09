@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login | World Currency Exchange</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="auth-page">
+
+    <div class="background-effects">
+        <span class="glow glow-one"></span>
+        <span class="glow glow-two"></span>
+        <span class="glow glow-three"></span>
+    </div>
+
+    <main class="auth-container">
+
+        <section class="auth-card">
+
+            <div class="brand">
+                <div class="brand-icon">🌍</div>
+
+                <div>
+                    <h1>WORLD CURRENCY</h1>
+                    <span>EXCHANGE</span>
+                </div>
+            </div>
+
+            <div class="auth-heading">
+                <h2>Welcome Back</h2>
+                <p>Login to continue to your currency dashboard.</p>
+            </div>
+
+            <form id="loginForm" autocomplete="off" novalidate>
+
+                <div class="form-group">
+
+                    <label for="loginEmail">Email Address</label>
+
+                    <div class="input-wrapper">
+                        <span class="input-icon">✉</span>
+
+                        <input
+                            type="email"
+                            id="loginEmail"
+                            name="loginEmail"
+                            placeholder="Enter your email"
+                            autocomplete="off"
+                            value=""
+                            required
+                        >
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="loginPassword">Password</label>
+
+                    <div class="input-wrapper">
+
+                        <span class="input-icon">🔒</span>
+
+                        <input
+                            type="password"
+                            id="loginPassword"
+                            name="loginPassword"
+                            placeholder="Enter your password"
+                            autocomplete="new-password"
+                            value=""
+                            required
+                        >
+
+                        <button
+                            type="button"
+                            class="password-toggle"
+                            data-target="loginPassword"
+                            aria-label="Show password"
+                        >
+                            👁
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <div class="login-extra">
+                    <span>🔐 Secure Demo Login</span>
+
+                    <a href="forgot.html">
+                        Forgot Password?
+                    </a>
+                </div>
+
+                <div id="loginMessage" class="form-message"></div>
+
+                <button type="submit" class="primary-button">
+                    <span>Login</span>
+                    <span>→</span>
+                </button>
+
+            </form>
+
+            <div class="auth-divider">
+                <span>OR</span>
+            </div>
+
+            <div class="register-box">
+                <p>Don't have an account?</p>
+
+                <a href="register.html" class="secondary-button">
+                    Create New Account
+                </a>
+            </div>
+
+            <footer class="auth-footer">
+                © 2026 World Currency Exchange
+            </footer>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

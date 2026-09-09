@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Register | World Currency Exchange</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="auth-page">
+
+    <div class="background-effects">
+        <span class="glow glow-one"></span>
+        <span class="glow glow-two"></span>
+        <span class="glow glow-three"></span>
+    </div>
+
+    <main class="auth-container">
+
+        <section class="auth-card">
+
+            <div class="brand">
+                <div class="brand-icon">🌍</div>
+
+                <div>
+                    <h1>WORLD CURRENCY</h1>
+                    <span>EXCHANGE</span>
+                </div>
+            </div>
+
+            <div class="auth-heading">
+                <h2>Create Account</h2>
+                <p>Register to access the currency exchange dashboard.</p>
+            </div>
+
+            <form id="registerForm" autocomplete="off" novalidate>
+
+                <div class="form-group">
+
+                    <label for="registerName">Full Name</label>
+
+                    <div class="input-wrapper">
+                        <span class="input-icon">👤</span>
+
+                        <input
+                            type="text"
+                            id="registerName"
+                            name="registerName"
+                            placeholder="Enter your full name"
+                            autocomplete="off"
+                            value=""
+                            required
+                        >
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="registerEmail">Email Address</label>
+
+                    <div class="input-wrapper">
+                        <span class="input-icon">✉</span>
+
+                        <input
+                            type="email"
+                            id="registerEmail"
+                            name="registerEmail"
+                            placeholder="Enter your email"
+                            autocomplete="off"
+                            value=""
+                            required
+                        >
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="registerPassword">Password</label>
+
+                    <div class="input-wrapper">
+
+                        <span class="input-icon">🔒</span>
+
+                        <input
+                            type="password"
+                            id="registerPassword"
+                            name="registerPassword"
+                            placeholder="Create a strong password"
+                            autocomplete="new-password"
+                            value=""
+                            required
+                        >
+
+                        <button
+                            type="button"
+                            class="password-toggle"
+                            data-target="registerPassword"
+                            aria-label="Show password"
+                        >
+                            👁
+                        </button>
+
+                    </div>
+
+                    <small class="password-hint">
+                        Minimum 8 characters with uppercase, lowercase and number.
+                    </small>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="confirmPassword">Confirm Password</label>
+
+                    <div class="input-wrapper">
+
+                        <span class="input-icon">🔐</span>
+
+                        <input
+                            type="password"
+                            id="confirmPassword"
+                            name="confirmPassword"
+                            placeholder="Confirm your password"
+                            autocomplete="new-password"
+                            value=""
+                            required
+                        >
+
+                        <button
+                            type="button"
+                            class="password-toggle"
+                            data-target="confirmPassword"
+                            aria-label="Show password"
+                        >
+                            👁
+                        </button>
+
+                    </div>
+
+                </div>
+
+           
+
+                <div id="registerMessage" class="form-message"></div>
+
+                <button type="submit" class="primary-button">
+                    <span>Create Account</span>
+                    <span>→</span>
+                </button>
+
+            </form>
+
+            <div class="auth-divider">
+                <span>OR</span>
+            </div>
+
+            <div class="register-box">
+
+                <p>Already have an account?</p>
+
+                <a href="login.html" class="secondary-button">
+                    Back to Login
+                </a>
+
+            </div>
+
+            <footer class="auth-footer">
+                © 2026 World Currency Exchange
+            </footer>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
